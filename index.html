@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheikh Developer | Creative Full-Stack Developer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Award-winning full-stack developer specializing in creating immersive digital experiences with cutting-edge web technologies.">
+    <meta name="keywords" content="creative developer, full-stack engineer, web artisan, digital craftsman, UI/UX specialist">
+    <meta name="author" content="Sheikh Developer">
+    <meta name="theme-color" content="#6F3DF7">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sheikh-developer.github.io/">
+    <meta property="og:title" content="Sheikh Developer | Digital Craftsman">
+    <meta property="og:description" content="Crafting immersive digital experiences through creative code and modern design">
+    <meta property="og:image" content="https://sheikh-developer.github.io/assets/preview.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@sheikh_dev">
+    <meta name="twitter:title" content="Sheikh Developer | Digital Craftsman">
+    <meta name="twitter:description" content="Crafting immersive digital experiences through creative code and modern design">
+    <meta name="twitter:image" content="https://sheikh-developer.github.io/assets/preview.jpg">
+    
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sheikh Developer",
+      "url": "https://sheikh-developer.github.io",
+      "image": "https://sheikh-developer.github.io/assets/profile.jpg",
+      "sameAs": [
+        "https://github.com/sheikh-developer",
+        "https://twitter.com/sheikh_dev",
+        "https://linkedin.com/in/sheikh-developer"
+      ],
+      "jobTitle": "Full-Stack Developer",
+      "description": "Creative developer specializing in modern web technologies and digital experiences",
+      "skills": [
+        "Full-Stack Development",
+        "UI/UX Design",
+        "3D Web Development",
+        "Creative Coding",
+        "Performance Optimization"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Technology"
+      }
+    }
+    </script>
+    
+    <!-- Styles -->
+    <style>
+        :root {
+            --primary: #6F3DF7;
+            --secondary: #2C1FF0;
+            --accent: #00F7FF;
+            --background: #0A0A0A;
+            --text: #FFFFFF;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter var', sans-serif;
+            background: var(--background);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+        
+        .noise {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.05;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjc1IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIzMDAiIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==');
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .hero__content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero__title {
+            font-size: clamp(3rem, 8vw, 7rem);
+            line-height: 1;
+            margin-bottom: 2rem;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            transition: var(--transition);
+        }
+        
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+        
+        .projects {
+            padding: 8rem 0;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .hero__title {
+                font-size: clamp(2rem, 6vw, 4rem);
+            }
+        }
+        
+        /* Modern Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--background);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="noise"></div>
+    
+    <header class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title floating">Creative<br>Developer</h1>
+                <div class="glass-card">
+                    <p>Crafting digital experiences through code and creativity</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="projects">
+            <div class="container">
+                <h2>Selected Works</h2>
+                <div class="project-grid">
+                    <article class="glass-card">
+                        <h3>Project Alpha</h3>
+                        <p>Immersive 3D experience</p>
+                    </article>
+                    <article class="glass-card">
+                        <h3>Project Beta</h3>
+                        <p>AI-powered interface</p>
+                    </article>
+                    <article class="glass-card">
+                        <h3>Project Gamma</h3>
+                        <p>Interactive visualization</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
